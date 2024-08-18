@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.home {
+    height: 100vh;
+    background: url('img/p8.jpeg') no-repeat center center/cover;
+    color: white;
+}
+
+#about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+#portfolio .card {
+    transition: transform 0.3s ease;
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05);
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}

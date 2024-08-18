@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nazwan Ariq Fadillah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Additional styles for mobile responsiveness */
+        
+        body {
+            font-size: 16px;
+        }
+        /* Ensure images and sections fit well on smaller screens */
+        
+        #home,
+        #about,
+        #portfolio,
+        #contact {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        .home-container img {
+            width: 100%;
+            max-width: 200px;
+            margin-bottom: 1rem;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 0.25rem 0.5rem;
+            /* Mengurangi padding navbar */
+            background-color: black;
+        }
+        
+        .navbar-brand {
+            font-size: 1rem;
+            /* Mengurangi ukuran font brand */
+            color: white;
+        }
+        
+        .navbar-nav {
+            text-align: left;
+        }
+        
+        .navbar-nav .nav-link {
+            padding: 0.25rem 0.5rem;
+            /* Mengurangi padding link */
+            font-size: 0.75rem;
+            /* Mengurangi ukuran font link */
+            color: white;
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .card-body {
+            text-align: left;
+        }
+        
+        @media (max-width: 768px) {
+            /* Adjusting the navbar for mobile view */
+            .navbar-brand {
+                font-size: 1rem;
+            }
+            .navbar-nav .nav-link {
+                padding: 0.25rem 0.5rem;
+            }
+            #about p,
+            #contact label {
+                font-size: 1rem;
+            }
+            /* Ensuring forms and text fit on mobile */
+            #contact input,
+            #contact textarea {
+                width: 100%;
+            }
+            /* Adjust the width of contact form inputs */
+            .form-control {
+                width: 100%;
+                max-width: 100%;
+                text-align: left;
+            }
+        }
+        /* Align text inputs and button to the left */
+        
+        #contact form {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        #contact .form-label,
+        #contact .form-control,
+        #contact button {
+            text-align: left;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        /* Updated Contact Section styles for white text */
+        
+        #contact .form-label,
+        #contact .form-control,
+        #contact button {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.466);
+            /* This ensures the background is consistent */
+        }
+        
+        #contact .form-control::placeholder {
+            color: white;
+            /* Ensure placeholder text is also white */
+        }
+        
+        #contact button {
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nazwan Ariq Fadillah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center justify-content-center text-center py-5" style="min-height: 100vh; background-image: url('img/dadu.jpg'); background-size: cover; margin: 0;">
+        <div class="home-container">
+            <img src="img/nazwan.jpg" alt="Nazwan Ariq Fadillah" style="width: 200px; border-radius: 15px;">
+            <h1 class="display-4" style="color: white;">Hello, I'm Nazwan Ariq Fadillah</h1>
+            <p class="lead" style="color: white;">A passionate web developer with a love for creating innovative web solutions.</p>
+            <p class="lead" style="color: white;">My Other Platforms:</p>
+            <div class="social-icons">
+                <a href="https://github.com/nazwandagu" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.facebook.com/nazwan.nazwan.18007" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/nazwanarq_/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nazwan-ariq-336692316/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 my-0" style="min-height: 100vh; background-image: url('img/p0.jpg'); background-size: cover; margin: 0;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: white;">About Me</h2>
+            <p class="text-center" style="color: white;">Hello! My name is Nazwan Ariq Fadillah, and I am a Computer Engineering student with a deep passion for technology. My journey with computers began in junior high school, and ever since, I've been captivated by the rapid advancements in technology.
+                I am particularly interested in web development and have experience creating simple websites. Outside of academics, I enjoy staying active by playing badminton and jogging, activities that help me maintain my health and fitness. I believe
+                in the balance between physical and mental well-being, which is why I devote time to both my studies and my hobbies. I am always eager to learn and explore new technologies, and I strive to continuously improve my skills. Whether it's
+                designing a web application or solving a complex problem, I approach every challenge with curiosity and determination. Feel free to explore my portfolio to see some of the projects I've worked on, and don't hesitate to reach out if you'd
+                like to connect or collaborate on a project!
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 my-0 bg-light" style="min-height: 100vh; background-image: url('img/p10.jpg'); background-size: cover; margin: 0;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: white;">Portfolio</h2>
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="img/ip2.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project web IoT</h5>
+                            <p class="card-text">a web-based internet of things project that I created to monitor room temperature.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="img/ip.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project student attendance</h5>
+                            <p class="card-text">simple student attendance website project that can be used to input student attendance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 my-0" style="min-height: 100vh; background-image: url('img/contact1.jpg'); margin: 0;">
+        <div class="container text-center">
+            <div class="row align-items-start">
+                <div class="col-md-6">
+                    <div class="container">
+                        <h2 class="text-center mb-4" style="color: white;">Contact Me</h2>
+                        <form id="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label" style="color: white;">Name</label>
+                                <input type="text" class="form-control" style="background-color: rgba(0, 0, 0, 0.466);" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label" style="color: white;">Email</label>
+                                <input type="email" class="form-control" style="background-color: rgba(0, 0, 0, 0.466);" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label" style="color: white;">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" style="background-color: rgba(0, 0, 0, 0.466);" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark">confirm</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="text-center mt-4" style="color: white;">
+                        <h1 style="font-size: 40px;">Office Location</h1><br>
+                        <i class="bi bi-house-door-fill" style="margin-bottom: 15px;"> Karawang, West Java 41373, Indonesia</i><br>
+                        <i class="bi bi-whatsapp" style=" margin-top: 15px;"> +62 83898522583</i>
+                    </div>
+                    <div class="text-center mt-4" style="color: white;">
+                        <h1 style="font-size: 24px;">Payment:</h1>
+                        <i>OVO : 089699759238</i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center py-3" style="background-color: black; color: white;">
+        <p>&copy; 2024 Nazwan Ariq Fadillah.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("Gp56-8tg2oMaWhg6h"); // Replace with your EmailJS User ID
+        })();
+    </script>
+
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            emailjs.sendForm('service_r1k7fqo', 'template_646fca9', this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                    // Reset the form
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    alert('Failed to send the message, please try again later.');
+                });
+        });
+    </script>
+
+</body>
+
+</html>
